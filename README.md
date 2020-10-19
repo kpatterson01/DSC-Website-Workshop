@@ -1,4 +1,4 @@
-# portfoliowebsite
+# Hampton University Developer Student Club Website Workshop
 
 Learning how to create a simple website using bootstrap! 
 
