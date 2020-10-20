@@ -1,41 +1,147 @@
+<!--This document is the core of the website. This is where we position everything
+on the page and write text-->
 <!DOCTYPE html>
-    <head>
-        <!--Website Title-->
-        <title>Name Here</title>
-        <!--Bootstrap-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <!--Link styl.css file to index.html-->
-        <link rel="stylesheet" href="styles.css">
-    </head>
-        <link rel="stylesheet" href="style.css" >
-    </head>
-    <body> <!--Body is where you put code in-->
-        <!--Navigation Bar-->
-        <nav>
-            <div class="logo">
-                <h3>
-                    <img src="img/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
-                    Name Here 
-                </h3>
-            </div>
-            <ul class="nav-links">
-              <li><a href="/">About</a></li>
-              <li><a href="">Education</a></li>
-              <li><a href="">Experience</a></li>
-              <li><a href="">Skills</a></li>
-              <li><a href="">Contact</a></li>
-            </ul>
-        </nav>   
-        <section>
-            <div id="title">
-                <h1>Name Here</h1>
-            </div>
-        </section>
-        
 
-        <!--Bootstrap-->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>  
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    </body>
+<head> <!--Head is where you link other files and libraries-->
+    <!--Website Title-->
+    <title>Name Here</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Link styl.css file to index.html-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Map API
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASzIidQZizgStD7vYS-XYJFqKa6LZUyfI&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>-->
+</head>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body> <!--Body is where you put code in-->
+    <!--Navigation Bar-->
+    <nav>
+        <div class="logo">
+            <h3>
+                <img src="img/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+                Name Here
+            </h3>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#edu">Education</a></li>
+            <!--<li><a href="#exp">Experience</a></li>-->
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--Cover Page Section-->
+    <section class="cover-page">
+        <div id="title">
+            <h1>Name Here</h1>
+            <div id="about-btn">
+                    <button onclick="addWelcome()" class="btn btn-primary">Click Me!</button>
+                    <div id="more-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--About Me Section-->
+    <section class="about-me" id="about">
+        <div class="d-flex flex-row bd-highlight mb-3 justify-content-between">
+            <div class="p-2 bd-highlight">
+                <h1>About Me</h1>
+                <p> Put Hampton Intro Here or a summary of yourself. An About me section should really show
+                    <br> who you are as a person. Starting with your Hampton Intro is always a great start
+                    <br> My name is (Name Here) and I am a (Put Major Here) from (Put State Here)!
+                </p>
+            </div>
+            <!--Place nice photo of yourself here, change file path-->
+            <div class="p-2 bd-highlight"><img src="img/headshot.png" width="300" height="300" class="d-inline-flex align-top" alt="professional headshot">
+            </div>
+        </div>
+    </section>
+
+    <!--Education Section-->
+    <section class="education" id="edu">
+            <div class="d-flex flex-row bd-highlight mb-3 justify-content-between">
+                <!--Place nice photo of yourself here, change file path-->
+                <div class="p-2 bd-highlight"><img src="img/edu1.png" width="300" height="300" class="d-inline-flex align-top" alt="professional headshot">
+                </div>
+                <div class="p-2 bd-highlight">
+                    <h1>Hampton University</h1>
+                    <p> Put your courses, activities, societies, and other information relating to 
+                        <br> Hampton University here. This section should talk about everthing relating  
+                        <br> to Hampton Universtiy. 
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex flex-row bd-highlight mb-3 justify-content-between">
+                    <!--Place nice photo of yourself here, change file path-->
+                    <div class="p-2 bd-highlight"><img src="img/edu2.png" width="300" height="300" class="d-inline-flex align-top" alt="professional headshot">
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <h1>Insert High School Here</h1>
+                        <p> Put your courses, activities, societies, and other information relating to 
+                                <br> your high school here. This section should talk about everthing relating  
+                                <br> to your high school. 
+                        </p>
+                    </div>
+            </div>
+    </section>
+
+    <!--Skills-->
+    <section class="skills" id="skill">
+        <h1 id="section-title">Skills Section</h1>
+            <div class="d-flex justify-content-around">
+                <div>
+                    <img src="img/skills1.png" width="350" height="350" class="d-inline-block align-top" alt="">
+                    <h1>Problem Solving</h1>
+                </div>
+                <div>
+                    <img src="img/skills2.png" width="350" height="350" class="d-inline-block align-top" alt="">
+                    <h1>Time Management</h1>
+                </div>
+                <div>
+                    <img src="img/skills3.png" width="325" height="350" class="d-inline-block align-top" alt="">
+                    <h1>Communication</h1>
+                </div>
+            </div>
+    </section>
+
+    <!--Contact-->
+    <section class="contact" id="contact">
+        <h3 id="contact-txt">Contact Me!</h3>
+        <!--The div element for the map -->
+        <div id="map"></div>
+        <br><br>
+        <div class="d-flex justify-content-around" >
+            <a href="mailto:" class="btn btn-primary btn-lg">Email Me</a>
+            <a href="https://www.linkedin.com/in/" class="btn btn-danger btn-lg">LinkedIn</a>
+            <a href="https://github.com/" class="btn btn-success btn-lg">Github</a>
+            <a href="https://" class="btn btn-warning btn-lg">Resume</a>   
+        </div>
+    </section>
+    
+    <!--Footer here-->
+    <footer>
+            <p>Website Created by {Name Here}</p>
+    </footer>
+
+    <!--Links script.ks to html-->
+    <script src="script.js"></script>
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
