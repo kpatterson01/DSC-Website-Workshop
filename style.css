@@ -1,0 +1,58 @@
+body {
+    background-color: lightgrey; /*Change Background Color Here*/
+    color: black; /*Change Text Color Here*/
+}
+
+/*Navigation Bar*/
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 9vh;
+}
+
+.logo {
+	color: black;
+	padding-inline-start: 10px;
+}
+
+.nav-links {
+    display: flex;
+	justify-content: space-around;
+    width: 30%;
+    list-style: none; 
+}
+
+nav li {
+	list-style: none;
+}
+
+nav a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+	padding-inline-end: 20px;
+}
+
+nav a:hover {
+	color: grey;
+}
+
+#title {
+    text-align: center; 
+}
+
+
+/*Defaults*/
+section { /*Aligns the section to be in the middle of the screen*/
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100vh; 
+    font-family: sans-serif; 
+    box-sizing: border-box; 
+    padding: 200px; 
+  
+  }
